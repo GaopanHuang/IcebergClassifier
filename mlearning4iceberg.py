@@ -49,7 +49,8 @@ for i in estimator_num:
   clf_gbc = GradientBoostingClassifier(n_estimators=i, loss='deviance',
       learning_rate=0.1, subsample=1.0, criterion='friedman_mse', 
       min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, 
-      max_depth=3, min_impurity_decrease=0.0, min_impurity_split=None, 
+      max_depth=3, min_impurity_decrease=0.0, 
+      min_impurity_split=None, 
       init=None, random_state=None, max_features=None, verbose=0, 
       max_leaf_nodes=None, warm_start=False, presort='auto')
   #clf_svm = svm.NuSVC(nu=0.5, kernel='rbf', degree=3, gamma='auto', 
